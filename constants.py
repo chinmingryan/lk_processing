@@ -6,6 +6,10 @@ from re import compile
 FTDI_MULTI_PATH = "./ftdi_multi_sn.sh"
 STAGE_LK_PATH = "./stage_for_lk_multi_sn.sh"
 
+# send_to_terminal_batch_v2.py constants
+# Log path
+LOG_OUTPUT_DIR = "/usr/local/google/home/chinmingryan/Documents/logs/mbu/test_command_output"
+
 # getSummary.py constants
 # Marker to identify the start of a new iteration to split.
 LOG_PARSE_MARKER = "otp_tool get_serial_num"
@@ -35,8 +39,7 @@ TIMEOUT_RUN_IP = 100
 BITS_EXT = '.7z.bits'
 
 RAMDISK_DIR = "/usr/local/google/home/chinmingryan/Documents/mbu_lk_related/flash_packs/mbu_a0_slt_proto1p0_ep/prebuilts/mbu"
-# Log path
-LOG_OUTPUT_DIR = "/usr/local/google/home/chinmingryan/Documents/logs/mbu/test_command_output"
+
 # Kibble paths
 CSV_OUTPUT_PATH = f'/usr/local/google/home/chinmingryan/Documents/kibble_data/{datetime.now().strftime("%Y%m%d")}'
 BITS_PATH = "/usr/local/google/home/chinmingryan/bits/bits"
