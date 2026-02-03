@@ -1,6 +1,6 @@
 import argparse
 import os, re, csv, glob
-from get_test_commands import getAllSubsystems
+from archive.get_test_commands import getAllSubsystems
 from constants import FIELDNAMES, SUMMARY_PATTERN
 class CSVSummary:
     def __init__(self, csv_out_dir):

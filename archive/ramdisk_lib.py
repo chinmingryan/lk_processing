@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Author: Chin Ming Ryan Wong
 
-from get_test_commands import getTestCommands
+from archive.get_test_commands import getTestCommands
 import os
 import subprocess
 import time

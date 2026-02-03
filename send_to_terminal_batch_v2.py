@@ -5,9 +5,7 @@ import argparse, os, serial, time, logging, csv, subprocess, threading, shutil
 from send_to_terminal import PortRunner, ERROR_MSG, ERROR
 from dhub_automation import DhubAutomation
 import serial_num_util, getSummary
-from constants import LOG_OUTPUT_DIR, FTDI_PATH
-
-OUTPUT_DIR = "/usr/local/google/home/chinmingryan/Documents/logs/mbu/send_to_terminal_batch"
+from constants import LOG_OUTPUT_DIR
 
 class MultiLineFormatter(logging.Formatter):
     def format(self, record):

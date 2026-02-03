@@ -1,9 +1,12 @@
 from datetime import datetime
 from re import compile
 
+# serial_num_util.py constants
+# Subsystem Test execution paths
+FTDI_MULTI_PATH = "./ftdi_multi_sn.sh"
+STAGE_LK_PATH = "./stage_for_lk_multi_sn.sh"
+
 # getSummary.py constants
-# Path to save the split log files and the final zip archive.
-OUTPUT_ZIP_DIR = "/usr/local/google/home/chinmingryan/Documents/logs/mbu/splitLog"
 # Marker to identify the start of a new iteration to split.
 LOG_PARSE_MARKER = "otp_tool get_serial_num"
 # Marker to identify a test run.
@@ -21,13 +24,16 @@ SUCCESS_END_MARKER = ["gsa: Test Passed", "returned 0 --> PASS"]
 RESULT_PATTERN = compile(r"(\d+)\s+Tests\s+(\d+)\s+Failures\s+(\d+)\s+Ignored")
 RESULT_PATTERN_1 = compile(r"(?:PASSED|FAILED) - (\d+)") # hsio_ufs test result pattern
 
+# dhub_automation.py constants
+DHUB_PATH = "./dhub.pyz"
+
+# blink_test.py constants
+SN_PAIR_FILE = "/usr/local/google/home/chinmingryan/Documents/mbu_lk_related/paired_serial_numbers.txt"
+
 #run_test_kibble constants
 TIMEOUT_RUN_IP = 100
 BITS_EXT = '.7z.bits'
-# Subsystem Test execution paths
-FTDI_PATH = "/usr/local/google/home/chinmingryan/Documents/mbu_lk_related/ftdi.sh"
-FTDI_MULTI_PATH = "/usr/local/google/home/chinmingryan/Documents/mbu_lk_related/ftdi_multi_sn.sh"
-STAGE_LK_PATH = "/usr/local/google/home/chinmingryan/Documents/mbu_lk_related/stage_for_lk_multi_sn.sh"
+
 RAMDISK_DIR = "/usr/local/google/home/chinmingryan/Documents/mbu_lk_related/flash_packs/mbu_a0_slt_proto1p0_ep/prebuilts/mbu"
 # Log path
 LOG_OUTPUT_DIR = "/usr/local/google/home/chinmingryan/Documents/logs/mbu/test_command_output"
@@ -43,9 +49,3 @@ _CACHED_TEST_DATA = None
 # log2csv.py constants
 FIELDNAMES = ["Subsystem", "Total Tests", "Pass", "Fail", "Hang"]
 SUMMARY_PATTERN = compile(r"(\d+)\s+Tests\s+(\d+)\s+Fails\s+(\d+)\s+Ignored\s+(\d+)\s+Hangs\s+(\d+)\s+Error\s+Messages")
-
-# dhub_automation.py constants
-DHUB_PATH = "/usr/local/google/home/chinmingryan/Documents/mbu_lk_related/dhub/dhub.pyz"
-
-# blink_test.py constants
-SN_PAIR_FILE = "/usr/local/google/home/chinmingryan/Documents/mbu_lk_related/paired_serial_numbers.txt"

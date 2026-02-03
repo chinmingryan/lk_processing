@@ -8,7 +8,7 @@ import os
 import time
 from collections import defaultdict
 from zipfile import ZipFile
-from get_test_commands import getTestCommands, getAllSubsystems
+from archive.get_test_commands import getTestCommands, getAllSubsystems
 from send_to_terminal import PortRunner, SUCCESS, ERROR_MSG, ERROR
 from ramdisk_lib import mount_ramdisk, find_ramdisk
 import getSummary
