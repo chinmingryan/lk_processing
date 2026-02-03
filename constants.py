@@ -34,6 +34,9 @@ DHUB_PATH = "./dhub.pyz"
 # blink_test.py constants
 SN_PAIR_FILE = "/usr/local/google/home/chinmingryan/Documents/mbu_lk_related/paired_serial_numbers.txt"
 
+
+#### CONSTANTS BELOW ARE ARCHIVED, PLEASE DO NOT DELETE BUT NO LONGER IN USE ####
+
 #run_test_kibble constants
 TIMEOUT_RUN_IP = 100
 BITS_EXT = '.7z.bits'
